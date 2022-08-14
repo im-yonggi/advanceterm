@@ -23,7 +23,7 @@ Route::get('/', [ShopController::class,`index`]);
 Route::get('/detail/{shop_id}', [ShopController::class,`detail`]);
 Route::post('/find', [ShopController::class,`find`]);
 Route::post('/reserve', [ReservationController::class,`create`]);
-// controllerでは予約完了画面げredirect
+Route::get('/done', [ReservationController::class,`done`]);
 Route::post('/reserve/delete', [ReservationController::class,`delete`]);
 Route::post('/favorite', [FavoriteController::class,`create`]);
 Route::post('/favorite/delete', [FavoriteController::class,`delete`]);

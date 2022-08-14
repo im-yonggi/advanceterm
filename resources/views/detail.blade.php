@@ -180,6 +180,7 @@ input{
       <h2 class="form__title">予約</h2>
       <form method="post" action="/">
     <!-- @csrf -->
+        <input type="hidden" name="id" value="{{$item -> id}}">
         <table>
           <tr>
             <td>
@@ -194,7 +195,7 @@ input{
           </tr>
           <tr>
             <td>
-              <input type="text" name="number" class="form__content"
+              <input type="text" name="number" class="form__content">
               <!--  form内にインプットした項目をリアルタイムで表示する方法検索  -->
             </td>
           </tr>
